@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <tap-view></tap-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TapView from './pages/TapView.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      currentView: 'home',
+    }
+  },
   components: {
-    HelloWorld
-  }
+    TapView
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+button {
+  margin: 40px 10px 0 0;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: dodgerblue;
+  font-weight: 400;
+  cursor: pointer;
 }
 </style>
