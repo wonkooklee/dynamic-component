@@ -21,6 +21,22 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  margin: 30px 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
 button {
   margin: 40px 10px 0 0;
   padding: 10px 25px;
